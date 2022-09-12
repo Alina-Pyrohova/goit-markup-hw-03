@@ -42,7 +42,7 @@ ul {
   list-style: none;
 }
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -122,9 +122,9 @@ body {
 /*contact nav*/
 
 .contact-nav {
-display: flex;
-padding-left: 0;
-margin-left: auto;
+  display: flex;
+  padding-left: 0;
+  margin-left: auto;
 }
 
 .contact-nav .link {
@@ -140,21 +140,34 @@ margin-left: auto;
 
   text-decoration: none;
 }
+
+.contact-nav .item + .item {
+  margin-left: 50px;
+}
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-text-color);
 }
 
-/* Hero*/
-.container-hero {
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+/* section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+/* Hero*/
 
 .hero {
   background-color: var(--secondary-background-studio);
+  padding: 200px 0;
+  text-align: center;
 }
+
+.container-hero {
+  max-width: 1600px;
+}
+
 .hero-title {
   color: var(--primary-background-color);
   font-weight: 900;
@@ -169,19 +182,19 @@ margin-left: auto;
   margin-right: auto;
 }
 .button-title {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 216px;
-  text-align: center;
   background: var(--accent-text-color);
   color: var(--primary-background-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  text-align: center;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  border: transparent;
 }
 
 /*.button-title:hover,
@@ -189,22 +202,28 @@ margin-left: auto;
     color: var(--accent-text-color)
 }*/
 
-/*Задній фон якоті т послуги*/
 
-.section-quality,
-.section-information {
-  background-color: var(--background-color);
-}
 /*Якості*/
 
 .unvisible {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
+
+.container-quality {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-title {
+display: flex;
+  padding: 0;
+  margin: 0;
+}
+
 .list-title .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -212,6 +231,14 @@ margin-left: auto;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.list-title .item-quality + .item-quality {
+  margin-left: 30px;
 }
 
 /*Заголовки h2*/
@@ -223,6 +250,7 @@ margin-left: auto;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+padding-bottom: 50px;
 }
 
 /*Команда*/
@@ -247,7 +275,7 @@ margin-left: auto;
 
 /*Контакти*/
 
-.section {
+.section-footer {
   background-color: var(--secondary-background-studio);
 }
 
@@ -262,11 +290,7 @@ margin-left: auto;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.geo-link {
-   font-style: normal;
-  text-decoration: none;
-}
-.geo-link,
+
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--primary-background-color);
