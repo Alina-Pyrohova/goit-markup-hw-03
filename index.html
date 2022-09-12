@@ -11,59 +11,74 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a lang="en" href="./index.html" class="logo">Web<span class="nav-color">Studio</span> </a>
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студія</a></li>
-          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
+      <div class="container main-nav">
+        <nav class="nav-list">
+          <a lang="en" href="./index.html" class="logo"
+            >Web<span class="nav-color">Studio</span>
+          </a>
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-nav list">
+          <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contact-nav list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Hero section-->
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
-        <button type="button" class="button-title">Замовити послугу</button>
+        <div class="container-hero">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button-title">Замовити послугу</button>
+        </div>
       </section>
 
       <!--Секція якості-->
       <section class="section-quality">
-        <h2 class="quality-title">Якості</h2>
-        <ul class="list-title list">
-          <li>
-            <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="quality-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="quality-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">ПЛАНУВАННЯ</h3>
-            <p class="quality-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="quality-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="quality-title unvisible">Якості</h2>
+          <ul class="list-title list">
+            <li>
+              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="quality-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="quality-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПЛАНУВАННЯ</h3>
+              <p class="quality-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="quality-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Секція послуги-->
       <section class="section-information">
@@ -108,9 +123,9 @@
       </a>
       <address>
         <ul class="address-list list">
-          <li class="address-link">
+          <li>
             <a
-              class="link"
+              class="geo-link"
               href="https://goo.gl/maps/1wzfTrZcwWFu8a3X7"
               target="_blank"
               rel="noopener noreferrer nofollow"

@@ -19,8 +19,41 @@
   --background-color: #f5f5f5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+* {
+  outline: 1px solid red;
+}
+
 .list {
   list-style: none;
+}
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-nav {
+  display: flex;
 }
 
 body {
@@ -32,6 +65,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.nav-list {
+  display: flex;
+}
+
 .logo {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
@@ -40,12 +77,26 @@ body {
   line-height: 1.19;
 
   text-decoration: none;
+
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
 }
 .nav-color {
   color: var(--secondary-text-color);
 }
 
 /* site nav */
+.site-nav {
+  display: flex;
+  padding-left: 0;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -53,6 +104,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   text-decoration: none;
 }
@@ -65,12 +120,23 @@ body {
   color: var(--accent-text-color);
 }
 /*contact nav*/
+
+.contact-nav {
+display: flex;
+padding-left: 0;
+margin-left: auto;
+}
+
 .contact-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   text-decoration: none;
 }
@@ -80,6 +146,12 @@ body {
 }
 
 /* Hero*/
+.container-hero {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero {
   background-color: var(--secondary-background-studio);
 }
@@ -91,8 +163,17 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button-title {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  text-align: center;
   background: var(--accent-text-color);
   color: var(--primary-background-color);
   font-family: inherit;
@@ -115,8 +196,14 @@ body {
   background-color: var(--background-color);
 }
 /*Якості*/
-.quality-title {
-  color: var(--title-text-color);
+
+.unvisible {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
 }
 .list-title .title {
   color: var(--title-text-color);
@@ -175,14 +262,16 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.geo-link {
+   font-style: normal;
+  text-decoration: none;
+}
+.geo-link,
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--primary-background-color);
 }
 
-address-link {
-  color: var(--primary-background-color);
-}
 /* Портфоліо кнопки */
 
 .button-filter {
